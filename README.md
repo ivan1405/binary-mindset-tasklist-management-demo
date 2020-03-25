@@ -1,12 +1,7 @@
-# API First tutorial
+# Tasklist Management Api
 
-This project contains an example of how to generate the API interfaces from an OpenApi specification using the spring generator.
+This project contains a demo api for managing tasks or projects (just like any TODO app)
 
-### How to
+## Persistence
 
-The generator starts at the maven compile phase, so to run it just execute:
-```
-mvn clean compile
-```
-
-and the API will be generated in the configured folder
+It contains some data which will be loaded on startup in an embedded H2 database 
