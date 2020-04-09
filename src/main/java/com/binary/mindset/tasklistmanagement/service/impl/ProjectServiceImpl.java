@@ -37,4 +37,9 @@ public class ProjectServiceImpl implements ProjectService {
         return project.map(proj -> mapperFacade.map(proj, Project.class))
                 .orElseThrow(() -> Problem.valueOf(Status.NOT_FOUND, "Project not found"));
     }
+
+    @Override
+    public void deleteById(Integer projectId) {
+        projectRepository.deleteById(projectId);
+    }
 }

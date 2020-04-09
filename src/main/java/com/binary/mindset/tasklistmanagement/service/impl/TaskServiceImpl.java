@@ -37,4 +37,19 @@ public class TaskServiceImpl implements TaskService {
         return task.map(tsk -> mapperFacade.map(tsk, Task.class))
                 .orElseThrow(() -> Problem.valueOf(Status.NOT_FOUND, "Task not found"));
     }
+
+    @Override
+    public void deleteAllByProjectId(Integer projectId) {
+        taskRepository.deleteAllByProjectId(projectId);
+    }
+
+    @Override
+    public void deleteById(Integer taskId) {
+        taskRepository.deleteById(taskId);
+    }
+
+    @Override
+    public void deleteByIdAndProjectId(Integer taskId, Integer projectId) {
+        taskRepository.deleteByIdAndProjectId(taskId, projectId);
+    }
 }

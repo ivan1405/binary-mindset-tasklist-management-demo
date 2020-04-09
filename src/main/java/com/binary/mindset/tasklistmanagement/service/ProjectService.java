@@ -9,4 +9,6 @@ public interface ProjectService {
     List<Project> findAllProjects();
 
     Project findById(Integer projectId);
+
+    void deleteById(Integer projectId);
 }

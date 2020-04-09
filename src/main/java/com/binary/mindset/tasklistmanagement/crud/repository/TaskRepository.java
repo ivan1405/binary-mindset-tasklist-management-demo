@@ -14,4 +14,8 @@ public interface TaskRepository extends CrudRepository<TaskEntity, Integer> {
     List<TaskEntity> findAllByProjectId(Integer projectId);
 
     Optional<TaskEntity> findByIdAndProjectId(Integer taskId, Integer projectId);
+
+    void deleteAllByProjectId(Integer projectId);
+
+    void deleteByIdAndProjectId(Integer taskId, Integer projectId);
 }
