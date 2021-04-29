@@ -18,7 +18,7 @@
         <lombok.version>1.18.10</lombok.version>
         <orika.version>1.5.4</orika.version>
         <orika-eclipse-tools.version>1.5.2</orika-eclipse-tools.version>
-        <openapi-generator-maven-plugin.version>4.2.3</openapi-generator-maven-plugin.version>
+        <openapi-generator-maven-plugin.version>5.1.0</openapi-generator-maven-plugin.version>
         <problem-spring-web.version>0.25.2</problem-spring-web.version>
         <!-- Other -->
         <project-base-package>com.binary.mindset.tasklistmanagement</project-base-package>
